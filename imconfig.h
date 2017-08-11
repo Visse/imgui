@@ -56,3 +56,7 @@ namespace ImGui
 }
 */
 
+#ifdef PISCES_USE_IMGUI
+#include "Pisces/build_config.h"
+#define IMGUI_API PISCES_API
+#endif
